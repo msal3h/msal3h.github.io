@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+  <title>Travel Buddy</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap CSS (YOU WERE MISSING THIS) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <body>
+    <header class="header">
+      <div class="headeritem1">
+
+        Travel Buddy
+      </div>
+
+      <button id="new-trip-btn" class="headeritem2" data-bs-toggle="modal" data-bs-target="#myModal">
+        <svg
+          class="blackicons"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4.5v15m7.5-7.5h-15"
+          />
+        </svg>
+        
+        New trip
+      </button>
+      <div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Plan A New Trip </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+  <label class="form-label">Trip Name</label>
+  <input type="text" class="form-control" placeholder="e.g, Summer in paris " id="trip-name">
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Destination</label>
+  <input type="text" class="form-control"  placeholder="e.g, France, Tokyo"id="trip-destination">
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Start Date</label>
+  <input type="date" class="form-control"  id="trip-start-date">
+</div>
+
+<div class="mb-3">
+  <label class="form-label">End Date</label>
+  <input type="date" class="form-control" id="trip-end-date">
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Budget</label>
+  <input type="text" class="form-control" id="trip-budget">
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Description</label>
+  <input style ="padding: 20px"type="text" class="form-control" id="trip-description">
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close-trip">Close</button>
+        <button type="button" class="btn btn-primary" id="save-trip">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </header>
+
+    <div class="main">
+      <div class="mainitem1">
+        <div class="MIsub1">Your Trips</div>
+        <div class="MIsub2">Plan and organize your advnetures</div>
+        <div class="MIsub3">
+          <input
+            type="text"
+            placeholder="Search your trips..."
+            style="
+              padding: 8px;
+              border-radius: 10px;
+              border: 1px solid rgb(191, 204, 197);
+            "
+          />
+          <div class="MIsub4 tabs">
+            <button class="tab active">All</button>
+            <button class="tab">Upcoming</button>
+            <button class="tab">Ongoing</button>
+            <button class="tab">Past</button>
+          </div>
+        </div>
+      </div>
+      <div class="mainitem2 cards">
+        <div class="card">
+          <div class="card-image" style="margin-top: 23px">
+            <img src="download (2).jpeg" />
+          </div>
+          <div class="card-content">
+            <h3>Tokyo Adventure</h3>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="margin-top: 23px">
+            <img src="download (2).jpeg" />
+          </div>
+          <div class="card-content">
+            <h3>Tokyo Adventure</h3>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="margin-top: 23px">
+            <img src="download (2).jpeg" />
+          </div>
+          <div class="card-content">
+            <h3>Tokyo Adventure</h3>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="margin-top: 23px">
+            <img src="download (2).jpeg" />
+          </div>
+          <div class="card-content">
+            <h3>Tokyo Adventure</h3>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="margin-top: 23px">
+            <img src="download (2).jpeg" />
+          </div>
+          <div class="card-content">
+            <h3>Tokyo Adventure</h3>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="margin-top: 23px">
+            <img src="download (2).jpeg" />
+          </div>
+          <div class="card-content">
+            <h3>Tokyo Adventure</h3>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <button id="btn">Click</button> -->
+
+    <script src="script.js"></script>
+
+    <footer class="footer">Travel Buddy plan your trips with ease</footer>
+  </body>
+</html>
+
+
+
+
+<!-- makeshift logo code:         <svg
+        style="border: solid 0px;
+        border-radius: 5px;
+        background-color: rgb(74, 133, 97);
+        padding: 4px;
+        "
+          class="blackicons"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
+          />
+        </svg> -->

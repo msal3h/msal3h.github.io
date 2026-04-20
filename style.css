@@ -1,0 +1,181 @@
+/*   #idname{} 
+   then <p id = "idname" ...
+
+   .classname{} 
+   then <p class = "classname" ...
+*/
+ /* look into 100vh or vh specifically*/
+
+body{
+    margin: 0px;
+    background-color:rgb(224, 238, 230); 
+
+}
+
+.main{
+    /* border: 8px  black; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Lato';
+    margin-top: 7px;
+    
+    /* V IMP to remember flex direction because it changes how all other properties work  */
+    /* justify-content is centering main axis(if row its horz, col its vert) */
+    /* align-items: center; */
+    /* align-items is centering cross axis */
+
+}
+
+
+.mainitem1{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+   
+}
+
+.MIsub1{
+margin-bottom: 13px;
+font-size: 26px;
+font-weight: bold 
+}
+.MIsub2{
+margin-bottom: 25px;
+color: rgb(70, 84, 76);
+}
+
+.MIsub3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap:20px;
+}
+
+.mainitem2{
+    display:flex;
+    gap: 20px;
+    font-size: 20px
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    
+    
+}
+.cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+
+}
+
+.card{
+    border: 1px solid rgb(191, 204, 197);
+    border-radius: 10px;
+    background-color :rgb(255, 255, 255);
+}
+
+.card-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    border-bottom: solid 1px rgb(191, 204, 197);
+    
+}
+
+.headeritem1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Archivo Black;
+    font-size: 20px;
+    margin: 8px;
+    margin-left: 40px;
+    gap: 5px;
+    
+}
+.whiteicons {
+  width: 18px;
+  height: 18px;
+  color: rgb(242, 244, 243);
+}
+.blackicons {
+  width: 25px;
+  height: 25px;
+  color: rgb(21, 22, 21);
+}
+
+.headeritem2{
+    display: flex;
+    margin: 8px;
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+    border:0px
+
+}
+
+.footer{
+    font-size: 20px;
+    font-family: Archivo Black;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px rgb(191, 204, 197);
+    
+}
+
+#new-trip-btn{
+    background-color:rgb(45, 118, 73);
+    border-radius: 12px;
+    padding: 7px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    gap: 5px;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+
+.tabs {
+  display: flex;
+  gap: 3px;
+  background-color:rgb(224, 238, 230);
+  padding: 3px;
+  border-radius: 15px;
+  width: fit-content;
+  border:1px solid rgb(191, 204, 197)
+}
+
+/* default tabs */
+.tab {
+  border: none;
+  background: transparent;
+  padding: 7px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* active tab */
+.tab.active {
+  background-color:rgb(224, 238, 230);
+  border: 1px solid rgb(191, 204, 197);
+}
+
+
